@@ -1,0 +1,348 @@
+@charset "UTF-8";
+#modal-area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 102;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+}
+
+.modal {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: oklch(0% 0 0/0.3);
+  backdrop-filter: blur(30px);
+  pointer-events: auto;
+}
+
+.modal > .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.modal > .body {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow: hidden;
+  gap: 10px;
+
+  min-width: 100px;
+  min-height: 100px;
+
+  border-radius: 40px;
+  background-color: var(--c-sub);
+  box-shadow: var(--c-nav-shadow);
+}
+
+.modal > .body > .buttons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+
+  width: 100%;
+}
+
+.modal > .body > .buttons > button,
+.modal > .body > .buttons > a {
+  padding: 15px;
+
+  min-height: 50px;
+
+  font-size: 11pt;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--c-modal-button);
+  cursor: pointer;
+
+  transition: all ease-in-out 0.15s;
+}
+.modal > .body > .buttons > button:hover,
+.modal > .body > .buttons > a:hover { background-color: var(--c-modal-button-hover); }
+.modal > .body > .buttons > button:active,
+.modal > .body > .buttons > a:active { background-color: var(--c-modal-button-active); }
+
+@media all and (max-width: 1200px) {
+  .modal { padding: 10px; }
+  .modal > .body {
+    justify-content: space-between;
+    padding: 20px;
+
+    max-height: 100%;
+    width: 100%;
+
+    border-radius: 20px;
+  }
+}
+
+/* 기술 스택 모달 */
+.stack-info {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  
+  width: 500px;
+  height: max-content;
+}
+.stack-info > .icon {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 15px;
+  background-color: red;
+}
+.stack-info > .desc {
+  padding: 10px;
+
+  min-height: 150px;
+  width: 100%;
+  flex: 1;
+
+  border-radius: 15px;
+  background-color: var(--c-main);
+}
+.stack-info > .desc > ul { padding: 5px 0 0 15px; }
+
+#modal-html .icon { background: no-repeat center/auto 80% url("../assets/html5.svg") #E44D26; }
+#modal-css .icon { background: no-repeat center/auto 80% url("../assets/css.svg") #264DE4; }
+#modal-js .icon { background: no-repeat center/auto 60% url("../assets/js.svg") #F7DF1E; }
+#modal-ts .icon { background: no-repeat center/auto 60% url("../assets/ts.svg") #3178C6; }
+#modal-node .icon { background: no-repeat center/auto 90% url("../assets/node.svg") #689F63; }
+
+@media all and (max-width: 1200px) {
+  .stack-info {
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .stack-info > .icon { width: 100%; }
+}
+
+/* 프로젝트 모달 */
+.pf-info {
+  display: grid;
+  grid-template-columns: 300px 600px;
+  grid-template-rows: 410px;
+  gap: 20px;
+}
+
+.pf-info > .image-area {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 10px;
+
+  width: 100%;
+  height: 100%;
+}
+.pf-info > .image-area > a {
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  flex: 1;
+
+  border-radius: 15px;
+}
+.pf-info > .image-area > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pf-info > .image-area > a::before {
+  display: grid;
+  position: absolute;
+  place-items: center;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  color: var(--c-white);
+  background-color: oklch(0% 0 0/0.5);
+  opacity: 0;
+  content: "이미지를 새 창에서 보려면 누르세요";
+
+  transition: opacity ease-in-out 0.15s;
+}
+.pf-info > .image-area > a:hover::before { opacity: 1; }
+
+/* .pf-info > .description {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  width: 100%;
+  height: 100%;
+}
+.pf-info > .description > .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  overflow: hidden;
+
+  min-height: 100%;
+  width: 100%;
+  height: max-content;
+} */
+
+.pf-info > .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+}
+
+.pf-info > .description > .top,
+.pf-info > .description > .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pf-stack-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+
+  width: 100%;
+
+  border-radius: 15px;
+  background-color: var(--c-main);
+}
+.pf-stack-icon-list > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  width: 92px;
+}
+.pf-stack-icon-list > *::before {
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  background-color: #000;
+  content: "";
+}
+.pf-stack-icon-list > *::after {
+  width: 100%;
+  height: max-content;
+
+  font-size: 11pt;
+  text-align: center;
+  text-wrap: wrap;
+  content: "";
+}
+
+.pf-stack-pwa::before {
+  background: no-repeat center/80% url("../assets/pwa.svg") #5A0FC8;
+  content: "";
+}
+.pf-stack-pwa::after { content: "PWA 지원"; }
+
+.pf-stack-responsive::before {
+  background: no-repeat center/70% url("../assets/responsive.svg") #E44D26;
+  content: "";
+}
+.pf-stack-responsive::after { content: "반응형 웹"; }
+
+.pf-stack-node::before {
+  background: no-repeat center/80% url("../assets/node.svg") #689F63;
+  content: "";
+}
+.pf-stack-node::after { content: "Node.JS"; }
+
+.pf-stack-ai::before {
+  background: no-repeat center/60% url("../assets/ai.svg") #000;
+  content: "";
+}
+.pf-stack-ai::after { content: "생성형 AI"; }
+
+.pf-stack-websocket::before {
+  background: no-repeat center/80% url("../assets/websocket.svg") #3C790A;
+  content: "";
+}
+.pf-stack-websocket::after { content: "WebSocket"; }
+
+.pf-stack-php::before {
+  background: no-repeat center/80% url("../assets/php.svg") #777BB3;
+  content: "";
+}
+.pf-stack-php::after { content: "PHP"; }
+
+.pf-stack-sql::before {
+  background: no-repeat center/70% url("../assets/sql.svg") #F29111;
+  content: "";
+}
+.pf-stack-sql::after { content: "SQL"; }
+
+.pf-stack-photoshop::before {
+  background: no-repeat center/60% url("../assets/photoshop.svg") #001E36;
+  content: "";
+}
+.pf-stack-photoshop::after { content: "Photoshop"; }
+
+.pf-stack-illustrator::before {
+  background: no-repeat center/60% url("../assets/illustrator.svg") #330000;
+  content: "";
+}
+.pf-stack-illustrator::after { content: "Illustrator"; }
+
+.pf-stack-rhino::before {
+  background: no-repeat center/80% url("../assets/rhinoceros.svg") #990000;
+  content: "";
+}
+.pf-stack-rhino::after { content: "Rhinoceros"; }
+
+.pf-stack-keyshot::before {
+  background: no-repeat center/80% url("../assets/keyshot.svg") #01054B;
+  content: "";
+}
+.pf-stack-keyshot::after { content: "KeyShot"; }
+
+@media all and (max-width: 1200px) {
+  .pf-info {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+  }
+  .pf-info > .image-area { flex-direction: row; }
+
+  .pf-stack-icon-list > * { width: 23%; }
+  .pf-stack-icon-list > *::before {
+    width: 40px;
+    height: 40px;
+  }
+  .pf-stack-icon-list > *::after { font-size: 10pt; }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #fff;
+      }
+
+      .st1 {
+        opacity: .3;
+      }
+    </style>
+  </defs>
+  <g id="svg3476" sodipodi:docname="CSS3.svg">
+    <polygon id="polygon2989" class="st1" points="256.3 59 236.9 275.9 149.9 300 63.1 275.9 43.7 59 256.3 59"/>
+    <polygon id="polygon2991" class="st1" points="220.3 262.1 236.9 76.7 150 76.7 150 281.6 220.3 262.1"/>
+    <polygon id="polygon2993" class="st0" points="88.1 157.2 90.5 183.8 150 183.8 150 157.2 88.1 157.2"/>
+    <polygon id="polygon2995" class="st0" points="150 103.3 149.9 103.3 83.3 103.3 85.7 129.9 150 129.9 150 103.3"/>
+    <polygon id="polygon2997" class="st0" points="150 253.9 150 226.3 149.9 226.3 120.3 218.3 118.4 197.1 104 197.1 91.6 197.1 95.4 238.8 149.9 254 150 253.9"/>
+    <path id="path2999" class="st0" d="M93.7,0h32.2v13.5h-18.8v13.5h18.8v13.5h-32.2V0Z" inkscape:connector-curvature="0"/>
+    <path id="path3001" class="st0" d="M132.4,0h32.2v11.7h-18.8v2.3h18.8v27h-32.2v-12.3h18.8v-2.3h-18.8V0Z" inkscape:connector-curvature="0"/>
+    <path id="path3003" class="st0" d="M171.1,0h32.2v11.7h-18.8v2.3h18.8v27h-32.2v-12.3h18.8v-2.3h-18.8V0Z" inkscape:connector-curvature="0"/>
+    <polygon id="polygon3005" class="st0" points="182.7 183.8 179.6 218.3 149.9 226.3 149.9 254 204.5 238.8 204.9 234.4 211.1 164.3 211.8 157.2 216.6 103.3 149.9 103.3 149.9 129.9 187.4 129.9 185 157.2 149.9 157.2 149.9 183.8 182.7 183.8"/>
+  </g>
+</svg>

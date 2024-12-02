@@ -1,0 +1,78 @@
+@charset "UTF-8";
+:root {
+  --c-accent: oklch(60% 0.3 310);
+  --c-accent-0: oklch(60% 0.3 310);
+  --c-accent-1: oklch(100% 0.2 310);
+  --c-accent-2: oklch(100% 0.1 310);
+  --c-accent-3: oklch(100% 0.05 310);
+  --c-white: oklch(100% 0 0);
+  --c-black: oklch(0% 0 0);
+  --c-n1: oklch(90% 0 0);
+  --c-n2: oklch(80% 0 0);
+  --c-n3: oklch(70% 0 0);
+  --c-n4: oklch(60% 0 0);
+  --c-n5: oklch(50% 0 0);
+  --c-n6: oklch(40% 0 0);
+  --c-n7: oklch(30% 0 0);
+  --c-n8: oklch(20% 0 0);
+  --c-n9: oklch(10% 0 0);
+
+  --c-main: var(--c-white);
+  --c-sub: oklch(99% 0 0);
+  --c-sub-2: oklch(97% 0 0);
+  --c-font: var(--c-black);
+  --c-border: var(--c-n5);
+  --c-gauge-bg: oklch(100% 0 0/0.4);
+  --c-gauge: oklch(100% 0 0/1);
+  --c-nav: oklch(90% 0 0/0.5);
+  --c-nav-border: oklch(95% 0 0/0.5);
+  --c-nav-gauge-bg: oklch(0% 0 0/0.1);
+  --c-nav-shadow: 0 0 10px oklch(0% 0 0/0.2);
+  --c-modal-button: oklch(0% 0 0/0.1);
+  --c-modal-button-hover: oklch(0% 0 0/0.15);
+  --c-modal-button-active: oklch(0% 0 0/0.2);
+
+  --c-footer: oklch(40% 0.02 187);
+  --c-footer-font: oklch(90% 0.02 187);
+  --c-footer-alt: oklch(30% 0.02 187);
+
+  --c-glass-shadow: 0 5px 10px oklch(0% 0 0/0.1s);
+  --c-glass-0: oklch(0% 0 0/0.03);
+  --c-glass-1: oklch(0% 0 0/0.1);
+
+  --c-button-hover: var(--c-n1);
+  --c-shadow: 0 2px 3px oklch(0% 0 0/0.3);
+
+  --m-cubic-bezier-0: cubic-bezier(.03, .8, .3, .95);
+  --m-cubic-bezier-1: cubic-bezier(.17, .67, .62, .96);
+
+  --i-menu-size: 72px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-accent-0: oklch(60% 0.3 310);
+    --c-accent-1: oklch(40% 0.3 310);
+    --c-accent-2: oklch(20% 0.3 310);
+    --c-accent-3: oklch(0% 0.3 310);
+
+    --c-main: var(--c-black);
+    --c-sub: var(--c-n8);
+    --c-sub-2: oklch(25% 0 0);
+    --c-font: var(--c-white);
+    --c-nav: oklch(40% 0 0/0.5);
+    --c-nav-border: oklch(45% 0 0/0.5);
+    --c-nav-gauge-bg: oklch(100% 0 0/0.1);
+    --c-nav-shadow: 0 0 10px oklch(0% 0 0/0.2);
+    --c-modal-button: oklch(100% 0 0/0.1);
+    --c-modal-button-hover: oklch(100% 0 0/0.15);
+    --c-modal-button-active: oklch(100% 0 0/0.2);
+    
+    --c-glass-shadow: 0 5px 10px oklch(100% 0 0/0.1s);
+    --c-glass-0: oklch(100% 0 0/0.03);
+    --c-glass-1: oklch(100% 0 0/0.1);
+
+    --c-button-hover: var(--c-n8);
+    --c-shadow: 0 2px 3px oklch(70% 0 0/0.3);
+  }
+}

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./stylesheets/palette.css">
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/nav.css">
+  <link rel="stylesheet" href="./stylesheets/sections.css">
+  <link rel="stylesheet" href="./stylesheets/modal.css">
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <div id="nav-route">
+        <div id="nav-tips"></div>
+        <div id="nav-gauge">
+          <div></div>
+        </div>
+        <p id="nav-route-name">대충 지금 보는 페이지 이름</p>
+      </div>
+    </div>
+  </nav>
+  <section id="s1" data-name="시작">
+    <div class="wrap">
+       <p id="title"></p>
+       <span>HTML · CSS · JavaScript · TypeScript · Node.JS</span>
+    </div>
+    <div class="deco1"></div>
+    <div class="deco2"></div>
+    <div class="deco3">스크롤을 내려 시작</div>
+  </section>
+  <section id="s2" data-name="프로필">
+    <div class="wrap">
+      <div class="left">
+        <div id="main-photo">
+          <img src="./assets/me.jpg" alt="메인 사진" loading="lazy">
+        </div>
+      </div>
+      <div class="right">
+        <h1>프로필</h1>
+        <div>
+          <h3>기본 사항</h3>
+          <div class="profile-row"><p>- BIRTH</p><p>2002.03.20</p></div>
+          <div class="profile-row"><p>- PHONE</p><p>010-8632-9586</p></div>
+          <div class="profile-row"><p>- EMAIL</p><p>shinsu02@naver.com</p></div>
+        </div>
+        <div>
+          <h3>학력 사항</h3>
+          <div class="profile-row"><p>- 2021</p><p>제주대학교사범대학부설고등학교 졸업</p></div>
+          <div class="profile-row"><p>- 2025</p><p>한국폴리텍Ⅰ대학 제주캠퍼스 소프트웨어융합디자인과 졸업예정</p></div>
+        </div>
+        <div>
+          <h3>경력 사항 - 개발 부문</h3>
+          <div class="profile-row"><p>- 2021</p><p>지역 XR챌린지 참가(본선)</p></div>
+          <div class="profile-row"><p>- 2021</p><p>한국실천공학교육학회 학술발표대회 수상(장비/매체 개발 부문 장려상)<span>이미지 인식 기술을 활용한 교육용 애플리케이션의 개발과 활용에 관한 연구</span></p></div>
+          <div class="profile-row"><p>- 2021</p><p>정부혁신제안 끝장개발대회(메이크톤) 참가(예선)</p></div>
+          <div class="profile-row"><p>- 2024</p><p>한국실천공학교육학회 학술발표대회 수상(장비/매체 개발 부문 금상)<span>음성 인식 기술과 AI를 활용한 학생용 교과 수업 도우미 애플리케이션 서비스 개발과 활용에 관한 연구</span></p></div>
+        </div>
+        <div>
+          <h3>경력 사항 - 디자인 부문</h3>
+          <div class="profile-row"><p>- 2024</p><p>제주특별자치도 상징물디자인 공모전 참가<span>제주도 상징 상패 디자인</span></p></div>
+          <div class="profile-row"><p>- 2024</p><p>제주특별자치도 옥외광고대전 수상(창작광고물 디자인 부문 은상)<span>사라봉 입구 옥외광고 디자인</span></p></div>
+        </div>
+        <div>
+          <h3>자격증</h3>
+          <div class="profile-row"><p>- 2021</p><p>정보처리기능사 취득</p></div>
+          <div class="profile-row"><p>- 2021</p><p>웹디자인기능사 취득</p></div>
+          <div class="profile-row"><p>- 2024</p><p>정보처리산업기사 필기 합격, 실기 결과 대기 중</p></div>
+        </div>
+        <div>
+          <h3>기술 스택</h3>
+          <span>자세히 확인하려면 아이콘을 클릭하세요</span>
+          <div id="stack-icon-list">
+            <div id="icon-html" class="stack-icon">
+              <div class="case">
+                <div class="body"></div>
+                <div class="gauge"></div>
+                <div class="outer"></div>
+              </div>
+              <div class="tip">
+                <h3>HTML</h3>
+                <h1>90%</h1>
+              </div>
+            </div>
+            <div id="icon-css" class="stack-icon">
+              <div class="case">
+                <div class="body"></div>
+                <div class="gauge"></div>
+                <div class="outer"></div>
+              </div>
+              <div class="tip">
+                <h3>CSS</h3>
+                <h1>85%</h1>
+              </div>
+            </div>
+            <div id="icon-js" class="stack-icon">
+              <div class="case">
+                <div class="body"></div>
+                <div class="gauge"></div>
+                <div class="outer"></div>
+              </div>
+              <div class="tip">
+                <h3>JavaScript</h3>
+                <h1>90%</h1>
+              </div>
+            </div>
+            <div id="icon-ts" class="stack-icon">
+              <div class="case">
+                <div class="body"></div>
+                <div class="gauge"></div>
+                <div class="outer"></div>
+              </div>
+              <div class="tip">
+                <h3>TypeScript</h3>
+                <h1>65%</h1>
+              </div>
+            </div>
+            <div id="icon-node" class="stack-icon">
+              <div class="case">
+                <div class="body"></div>
+                <div class="gauge"></div>
+                <div class="outer"></div>
+              </div>
+              <div class="tip">
+                <h3>Node.JS</h3>
+                <h1>85%</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deco1"></div>
+    <div class="deco2"></div>
+    <div class="deco3"></div>
+  </section>
+  <section id="s3" data-name="포트폴리오">
+    <div class="wrap">
+      <h1>포트폴리오</h1>
+      <div class="pf-zone">
+        <h2 class="title">팀 프로젝트</h2>
+        <div id="pf-11" class="pf-item">
+          <div class="thumbnail"><img src="./portfolio/programming-shoebay/1.png" alt="포트폴리오 썸네일" loading="lazy"></div>
+          <div class="description">
+            <div class="inner">
+              <h2 class="title">신발 전문 쇼핑몰 'Shoebay'</h2>
+              <p>소프트웨어융합디자인과 재학 중 웹프로젝트 실습 과제로 개발한 신발 전문 쇼핑몰 웹사이트 'Shoebay'입니다.</p>
+            </div>
+            <div class="tags">
+              <span class="php"></span>
+              <span class="sql"></span>
+            </div>
+          </div>
+        </div>
+        <div id="pf-12" class="pf-item">
+          <div class="thumbnail"><img src="./portfolio/programming-munhaeryeok/1.png" alt="포트폴리오 썸네일" loading="lazy"></div>
+          <div class="description">
+            <div class="inner">
+              <h2 class="title">문해력 도우미 애플리케이션</h2>
+              <p>2024년 한국실천공학교육학회 학술발표대회(장비/매체 개발 부문)에 '음성 인식 기술과 AI를 활용한 학생용 교과 수업 도우미 애플리케이션 서비스 개발과 활용에 관한 연구' 주제로 출품한 작품입니다. 대회에서 금상을 수상하였습니다.</p>
+            </div>
+            <div class="tags">
+              <span class="node"></span>
+              <span class="ai"></span>
+              <span class="websocket"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pf-zone">
+        <h2 class="title">개인 프로젝트</h2>
+        <div id="pf-21" class="pf-item">
+          <div class="thumbnail"><img src="./portfolio/programming-koreamap/3.svg" alt="포트폴리오 썸네일" loading="lazy"></div>
+          <div class="description">
+            <div class="inner">
+              <h2 class="title">간편 한국 지도 제작 웹 서비스</h2>
+              <p>초보도 손쉽게 한국의 지도를 기반으로 특정한 주제의 지도를 그릴 수 있도록 하는 웹 서비스 '한국지도 그림판'입니다.</p>
+            </div>
+            <div class="tags">
+              <span class="onair"></span>
+            </div>
+          </div>
+        </div>
+        <div id="pf-22" class="pf-item">
+          <div class="thumbnail"><img src="./portfolio/programming-trickcal/3.svg" alt="포트폴리오 썸네일" loading="lazy"></div>
+          <div class="description">
+            <div class="inner">
+              <h2 class="title">특정 모바일 게임의 2차 창작을 위한 도우미 웹 서비스</h2>
+              <p>모바일 게임 '트릭컬: 리바이브(Trickcal: Revive)'의 실제 인게임 스토리 씬 구조와 매우 유사한 형태의 이미지를 쉽게 제작할 수 있도록 돕는 웹 서비스 '트릭컬 테마극장 생성기'입니다.</p>
+            </div>
+            <div class="tags">
+              <span class="pwa"></span>
+              <span class="responsive"></span>
+              <span class="onair"></span>
+              <span class="ondev"></span>
+            </div>
+          </div>
+        </div>
+        <div id="pf-23" class="pf-item" style="display:none;">
+          <div class="thumbnail"><img src="./assets/200x150.png" alt="포트폴리오 썸네일" loading="lazy"></div>
+          <div class="description">
+            <div class="inner">
+              <h2 class="title">개인화된 자체제작 웹 디자인 및 기능 프레임워크</h2>
+              <p>기본 HTML 요소들의 스타일과, 모달, 알림창과 같은 특수한 기능을 하나의 모듈로 묶어 쉽게 적용할 수 있도록 하는 'Lyra Engine'입니다.</p>
+            </div>
+            <div class="tags">
+              <span class="responsive"></span>
+              <span class="ondev"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pf-zone">
+        <h2 class="title">디자인 프로젝트</h2>
+        <div id="pf-31" class="pf-item">
+          <div class="thumbnail"><img src="./portfolio/design-trophy/1.webp" alt="포트폴리오 썸네일" loading="lazy"></div>
+          <div class="description">
+            <div class="inner">
+              <h2 class="title">제주도 상징 상패 디자인</h2>
+              <p>2024년 제주특별자치도 상징물디자인 공모전 참가를 위해 제작한 작품입니다.</p>
+            </div>
+            <div class="tags">
+              <span class="photoshop"></span>
+              <span class="illustrator"></span>
+              <span class="rhino"></span>
+              <span class="keyshot"></span>
+            </div>
+          </div>
+        </div>
+        <div id="pf-32" class="pf-item">
+          <div class="thumbnail"><img src="./portfolio/design-sign/1.webp" alt="포트폴리오 썸네일" loading="lazy"></div>
+          <div class="description">
+            <div class="inner">
+              <h2 class="title">사라봉 입구 옥외광고 디자인</h2>
+              <p>2024년 제주특별자치도 옥외광고대전 참가를 위해 제작한 작품입니다. 이 작품으로 대회에서 은상을 수상하였습니다.</p>
+            </div>
+            <div class="tags">
+              <span class="photoshop"></span>
+              <span class="illustrator"></span>
+              <span class="rhino"></span>
+              <span class="keyshot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="s4" data-name="연락처">
+    <div class="wrap">
+      <p class="title">연락처</p>
+      <div id="contacts">
+        <div id="phone" data-value="01086329586">
+          <p>010<br>8632<br>9586</p>
+          <img src="./assets/telephone-fill.svg" class="icon" loading="lazy">
+          <div class="copy-slide">복사되었습니다</div>
+        </div>
+        <div id="email" data-value="shinsu02@naver.com">
+          <p>shinsu02<br><small>@naver.com</small></p>
+          <img src="./assets/envelope-open-fill.svg" class="icon" loading="lazy">
+          <div class="copy-slide">복사되었습니다</div>
+        </div>
+      </div>
+      <p id="copyrights">&copy; 2024. shinsu02 All rights reserved.</p>
+      <button id="button-top">맨 위로</button>
+    </div>
+    <div class="deco1"></div>
+    <div class="deco2"><div></div></div>
+    <div class="deco3"></div>
+  </section>
+  <div id="modal-area">
+    <div id="modal-html" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <h1>HTML</h1>
+        <div class="stack-info">
+          <div class="icon"></div>
+          <div class="desc">
+            <h2>주관적 성취도: 90%</h2>
+            <ul>
+              <li>HTML5 코드를 읽고 해석하여 원하는 대로 작성할 수 있습니다.</li>
+              <li>효율적인 레이아웃을 구성하고 작성할 수 있습니다.</li>
+              <li>HTML5의 Semantic Tag의 종류와 사용해야하는 이유를 이해하고 있습니다.</li>
+              <li>Progressive Web App 기술을 활용하여 PWA 앱을 제작할 수 있습니다.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-css" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <h1>CSS</h1>
+        <div class="stack-info">
+          <div class="icon"></div>
+          <div class="desc">
+            <h2>주관적 성취도: 85%</h2>
+            <ul>
+              <li>CSS를 활용하여 원하는 디자인을 만들 수 있습니다.</li>
+              <li>Media 쿼리를 활용하여 반응형 웹, 특정 상황에서의 스타일을 정의할 수 있습니다.</li>
+              <li>Keyframe 구문을 활용하여 애니메이션을 제작하고 적용할 수 있습니다.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-js" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <h1>JavaScript</h1>
+        <div class="stack-info">
+          <div class="icon"></div>
+          <div class="desc">
+            <h2>주관적 성취도: 90%</h2>
+            <ul>
+              <li>JS를 활용하여 사이트가 원하는 방식으로 동작하도록 코드를 작성할 수 있습니다.</li>
+              <li>Pointer 관련 이벤트, Scroll 등 다양한 이벤트를 활용할 수 있습니다.</li>
+              <li>익명 함수, 화살표 함수 등의 구조를 활용하여 효율적으로 JS 코드를 작성할 수 있습니다.</li>
+              <li>모듈화를 할 수 있습니다.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-ts" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <h1>TypeScript</h1>
+        <div class="stack-info">
+          <div class="icon"></div>
+          <div class="desc">
+            <h2>주관적 성취도: 65%</h2>
+            <ul>
+              <li>JS와 TS 차이점을 알고 그에 따라 코드를 작성할 수 있습니다.</li>
+              <li>TS를 활용해 원하는 코드를 작성할 수 있습니다.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-node" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <h1>Node.JS</h1>
+        <div class="stack-info">
+          <div class="icon"></div>
+          <div class="desc">
+            <h2>주관적 성취도: 85%</h2>
+            <ul>
+              <li>Vanilla JS의 스킬을 기반으로 Node.JS에서 원하는 프로그램을 작성할 수 있습니다.</li>
+              <li>다양한 라이브러리와 API를 활용할 수 있습니다.</li>
+              <li>Node.JS에서 TS를 활용하여 코드를 작성할 수 있습니다.</li>
+              <li>Node.JS 기반의 웹앱을 개발하고 서비스한 경험이 있습니다.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-pf-11" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <div class="pf-info">
+          <div class="image-area">
+            <a href="./portfolio/programming-shoebay/1.png" target="_blank"><img src="./portfolio/programming-shoebay/1.png" loading="lazy"></a>
+            <a href="./portfolio/programming-shoebay/2.png" target="_blank"><img src="./portfolio/programming-shoebay/2.png" loading="lazy"></a>
+          </div>
+          <div class="description">
+            <div class="top">
+              <h1>신발 전문 쇼핑몰 'Shoebay'</h1>
+              <h3>소개</h3>
+              <p>소프트웨어융합디자인과 재학 중 웹프로젝트 실습 과제로 개발한 신발 전문 쇼핑몰 웹사이트 'Shoebay'입니다.</p>
+              <p>이 프로젝트에서 팀장과 백엔드 개발(PHP, MySQL)을 담당하였습니다. DB 접속과 로그인과 같은 기본적인 기능부터, 사용자의 취향에 따른 메인화면 상품 노출 우선순위 알고리즘과 검색 알고리즘을 구현하고, 디자인 및 프론트엔트 담당이 제작한 파일과 백엔드 파일을 유기적으로 연결하여 최종 작품을 만드는 역할을 수행하였습니다.</p>
+              <p>비록 모든 기능을 완성하지 못했지만, 팀장으로서 팀원들에게 파트를 할당하고 프로젝트의 진행 전체를 통제하는 과정을 통해, 정돈된 완성물을 개발해내어 담당 교수로부터 좋은 평가를 받았습니다.</p>
+            </div>
+            <div class="bottom">
+              <h3>사용 기술</h3>
+              <div class="pf-stack-icon-list">
+                <div class="pf-stack-php"></div>
+                <div class="pf-stack-sql"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-pf-12" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <div class="pf-info">
+          <div class="image-area">
+            <a href="./portfolio/programming-munhaeryeok/1.png" target="_blank"><img src="./portfolio/programming-munhaeryeok/1.png" loading="lazy"></a>
+            <a href="./portfolio/programming-munhaeryeok/2.png" target="_blank"><img src="./portfolio/programming-munhaeryeok/2.png" loading="lazy"></a>
+          </div>
+          <div class="description">
+            <div class="top">
+              <h1>문해력 도우미 애플리케이션</h1>
+              <h3>소개</h3>
+              <p><a href="https://drive.google.com/file/d/1Yx6mbmKb02hJTulrNbHhGeJBqbYYMgvE/view" target="_blank">2024년 한국실천공학교육학회 학술발표대회(장비/매체 개발 부문)</a>에 '음성 인식 기술과 AI를 활용한 학생용 교과 수업 도우미 애플리케이션 서비스 개발과 활용에 관한 연구' 주제로 출품한 작품입니다.</p>
+              <p>최근 학생들의 어휘력과 문해력이 저하, 발표 참여도가 저조해지는 문제를 발견하여 이를 해결하는데 기여하고자 교육 현장에서 교사의 말 자막, 단어 사전, AI 질문 생성을 수행하여 학생의 학업을 돕는 웹 기반 앱 서비스를 제작하였습니다. Node.JS의 Express, WS, Langchain 라이브러리를 활용하여 제작하였습니다.</p>
+              <p>이 프로젝트에서 팀장으로 백엔드와 논문 작성을 담당했으며, 대회에서 좋은 평가를 받아 금상을 수상하였습니다.</p>
+            </div>
+            <div class="bottom">
+              <h3>사용 기술</h3>
+              <div class="pf-stack-icon-list">
+                <div class="pf-stack-node"></div>
+                <div class="pf-stack-ai"></div>
+                <div class="pf-stack-websocket"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-pf-21" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <div class="pf-info">
+          <div class="image-area">
+            <a href="./portfolio/programming-koreamap/1.png" target="_blank"><img src="./portfolio/programming-koreamap/1.png" loading="lazy"></a>
+            <a href="./portfolio/programming-koreamap/2.png" target="_blank"><img src="./portfolio/programming-koreamap/2.png" loading="lazy"></a>
+          </div>
+          <div class="description">
+            <div class="top">
+              <h1>간편 한국 지도 제작 웹 서비스</h1>
+              <h3>소개</h3>
+              <p>초보도 손쉽게 한국의 지도를 기반으로 특정한 주제의 지도를 그릴 수 있도록 하는 웹 서비스 '한국지도 그림판'입니다.</p>
+              <p>행정구역 단위로 색칠하는 방식으로 지도를 제작할 수 있습니다. 행정구역 표시 레벨을 변경하거나 특정 지역을 끌 수도 있으며, 저장된 내용을 Base64로 내보내어 다른 사람과 공유할 수도 있으며, <a href="https://canvg.js.org/" target="_blank">canvg 라이브러리</a>를 이용한 PNG 저장 기능을 이용해 이미지로 내보낼 수도 있습니다.</p>
+              <p>또한 내가 찾고자 하는 지역을 검색을 통해 찾아낼 수도 있고, 지역 위에 마우스를 올리면 지역 명칭이 화면 상단에 표시됩니다.</p>
+            </div>
+            <div class="bottom">
+              <h3>사용 기술</h3>
+              <div class="pf-stack-icon-list">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://github.com/acherium/koreamap-painter" target="_blank">깃허브 ↗</a>
+          <a href="https://acherium.github.io/koreamap-painter" target="_blank">접속 ↗</a>
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-pf-22" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <div class="pf-info">
+          <div class="image-area">
+            <a href="./portfolio/programming-trickcal/1.png" target="_blank"><img src="./portfolio/programming-trickcal/1.png" loading="lazy"></a>
+            <a href="./portfolio/programming-trickcal/2.png" target="_blank"><img src="./portfolio/programming-trickcal/2.png" loading="lazy"></a>
+          </div>
+          <div class="description">
+            <div class="top">
+              <h1>특정 모바일 게임의 2차 창작을 위한 도우미 웹 서비스</h1>
+              <h3>소개</h3>
+              <p>모바일 게임 '트릭컬: 리바이브(Trickcal: Revive)'의 실제 인게임 스토리 씬 구조와 매우 유사한 형태의 이미지를 쉽게 제작할 수 있도록 돕는 웹 서비스 '트릭컬 테마극장 생성기'입니다. 제가 즐겨하는 게임의 커뮤니티에 기여하고자 제작하였습니다.</p>
+              <p>이 게임 속에서 볼 수 있는 스토리 장면 속 연출들을 간편한 메뉴 조작과 다양한 편의기능을 통해 실제와 매우 유사하게 제작할 수 있습니다.</p>
+              <p>변경된 내용을 로컬 저장소에 기록하거나 <a href="https://yorickshan.github.io/html2canvas-pro/" target="_blank">html2canvas-pro 라이브러리</a>를 활용한 PNG 저장 기능을 통해 내보낼 수 있습니다.</p>
+            </div>
+            <div class="bottom">
+              <h3>사용 기술</h3>
+              <div class="pf-stack-icon-list">
+                <div class="pf-stack-pwa"></div>
+                <div class="pf-stack-responsive"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://github.com/acherium/trickcal-cg-generator" target="_blank">깃허브 ↗</a>
+          <a href="https://acherium.github.io/trickcal-cg-generator/" target="_blank">접속 ↗</a>
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-pf-23" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <div class="pf-info">
+          <div class="image-area">
+            <a href="./assets/1920x1080.png" target="_blank"><img src="./assets/1920x1080.png" loading="lazy"></a>
+            <a href="./assets/1920x1080.png" target="_blank"><img src="./assets/1920x1080.png" loading="lazy"></a>
+          </div>
+          <div class="description">
+            <div class="top">
+              <h1>개인화된 자체제작 웹 디자인 및 기능 프레임워크</h1>
+              <h3>소개</h3>
+              <p>기본 HTML 요소들의 스타일과, 모달, 알림창과 같은 특수한 기능을 하나의 모듈로 묶어 쉽게 적용할 수 있도록 하는 'Lyra Engine'입니다.</p>
+              <p>상기한 '특정 모바일 게임의 2차 창작을 위한 도우미 웹 서비스' 프로젝트에 적용되어 있으며, 데모 페이지에서 몇 가지 기능을 체험할 수 있습니다.</p>
+            </div>
+            <div class="bottom">
+              <h3>사용 기술</h3>
+              <div class="pf-stack-icon-list">
+                <div class="pf-stack-responsive"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://github.com/acherium/lyra-engine" target="_blank">깃허브 ↗</a>
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-pf-31" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <div class="pf-info">
+          <div class="image-area">
+            <a href="./portfolio/design-trophy/1.webp" target="_blank"><img src="./portfolio/design-trophy/1.webp" loading="lazy"></a>
+            <a href="./portfolio/design-trophy/2.webp" target="_blank"><img src="./portfolio/design-trophy/2.webp" loading="lazy"></a>
+          </div>
+          <div class="description">
+            <div class="top">
+              <h1>제주도 상징 상패 디자인</h1>
+              <h3>소개</h3>
+              <p><a href="https://www.jeju.go.kr/publicdesign/symbol.htm" target="_blank">2024년 제주특별자치도 상징물디자인 공모전</a> 참가를 위해 제작한 작품입니다.</p>
+              <p>제주특별자치도청의 'Only Jeju' 브랜드와 심볼마크를 활용한 작품으로, 오직 제주도에서만 볼 수 있는 유일하고 독특한 형태의 상패를 디자인 하는 것을 목표로 두고 제작하였습니다.</p>
+              <p>다만, 2024년 제주특별자치도 상징물디자인 공모전에서 '명함 및 상패 디자인' 부문이 참여율 저조로 인해 시상이 취소되어 평가되지 못했습니다.</p>
+              <p>소프트웨어융합디자인과 재학 2년동안 배웠던 모든 디자인 스킬을 활용했습니다.</p>
+            </div>
+            <div class="bottom">
+              <h3>사용 기술</h3>
+              <div class="pf-stack-icon-list">
+                <div class="pf-stack-photoshop"></div>
+                <div class="pf-stack-illustrator"></div>
+                <div class="pf-stack-rhino"></div>
+                <div class="pf-stack-keyshot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-pf-32" class="modal">
+      <div class="bg"></div>
+      <div class="body">
+        <div class="pf-info">
+          <div class="image-area">
+            <a href="./portfolio/design-sign/1.webp" target="_blank"><img src="./portfolio/design-sign/1.webp" loading="lazy"></a>
+            <a href="./portfolio/design-sign/2.webp" target="_blank"><img src="./portfolio/design-sign/2.webp" loading="lazy"></a>
+          </div>
+          <div class="description">
+            <div class="top">
+              <h1>사라봉 입구 옥외광고 디자인</h1>
+              <h3>소개</h3>
+              <p><a href="https://www.joaa.co.kr/bbs/board.php?bo_table=5_1_1_1&wr_id=98" target="_blank">2024년 제주특별자치도 옥외광고대전</a> 참가를 위해 제작한 작품입니다.</p>
+              <p>제주도의 오름이자 도심 공원인 사라봉 공원 입구에 아무런 간판과 안내판이 없다는 사실을 알아내, 이를 해결하기 위해 독특한 디자인과 기능성을 갖춘 옥외광고물을 디자인했습니다.</p>
+              <p>전체적인 형태는 사라봉 오름과 인근 오름들의 형태와 높이, 배치에서 착안하여 디자인하였습니다. 또한, 설치될 장소 뒷편에 넓은 공간이 있음에 착안하여 의자와 자전거 거치대를 배치하여 방문객의 편의성을 높이는 기능을 갖추도록 하였습니다.</p>
+              <p>소프트웨어융합디자인과 재학 2년동안 배웠던 모든 디자인 스킬을 활용하여 제작했으며, 대회에서 높은 평가를 얻어 은상을 수상하였습니다.</p>
+            </div>
+            <div class="bottom">
+              <h3>사용 기술</h3>
+              <div class="pf-stack-icon-list">
+                <div class="pf-stack-photoshop"></div>
+                <div class="pf-stack-illustrator"></div>
+                <div class="pf-stack-rhino"></div>
+                <div class="pf-stack-keyshot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="close">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
