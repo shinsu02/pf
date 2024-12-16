@@ -202,11 +202,13 @@
   const stackJS = $("#icon-js");
   const stackTS = $("#icon-ts");
   const stackNODE = $("#icon-node");
+  const stackPHP = $("#icon-php");
   stackHTML.onclick = (e) => modals.find((x) => x.id === "modal-html").show(e);
   stackCSS.onclick = (e) => modals.find((x) => x.id === "modal-css").show(e);
   stackJS.onclick = (e) => modals.find((x) => x.id === "modal-js").show(e);
   stackTS.onclick = (e) => modals.find((x) => x.id === "modal-ts").show(e);
   stackNODE.onclick = (e) => modals.find((x) => x.id === "modal-node").show(e);
+  stackPHP.onclick = (e) => modals.find((x) => x.id === "modal-php").show(e);
 
   // 프로젝트 모달 띄우기
   const pfItems = $a(".pf-item");

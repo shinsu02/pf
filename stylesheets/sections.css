@@ -259,6 +259,12 @@ section {
 #icon-node > .case > .body { background: no-repeat center/90% url("../assets/node.svg") #689F63; }
 #icon-node > .case > .gauge { background: conic-gradient(var(--c-gauge) 85%, var(--c-gauge-bg) 0); }
 
+#icon-php > .case,
+#icon-php > .case > .outer,
+#icon-php > .tip { background-color: #777BB3; }
+#icon-php > .case > .body { background: no-repeat center/80% url("../assets/php.svg") #777BB3; }
+#icon-php > .case > .gauge { background: conic-gradient(var(--c-gauge) 85%, var(--c-gauge-bg) 0); }
+
 .stack-icon:hover { z-index: 10; }
 .stack-icon:hover > .case {
   filter: drop-shadow(var(--c-shadow));

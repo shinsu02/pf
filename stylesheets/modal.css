@@ -128,6 +128,7 @@
 #modal-js .icon { background: no-repeat center/auto 60% url("../assets/js.svg") #F7DF1E; }
 #modal-ts .icon { background: no-repeat center/auto 60% url("../assets/ts.svg") #3178C6; }
 #modal-node .icon { background: no-repeat center/auto 90% url("../assets/node.svg") #689F63; }
+#modal-php .icon { background: no-repeat center/auto 80% url("../assets/php.svg") #777BB3; }
 
 @media all and (max-width: 1200px) {
   .stack-info {
